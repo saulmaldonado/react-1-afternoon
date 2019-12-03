@@ -18,7 +18,7 @@ class FilterString extends Component {
         let arr = this.state.names
         let filteredArr = []
         for(let i = 0; i < arr.length; i++){
-            if(arr[i].toLowerCase().includes(input.toLowerCase())){
+            if(arr[i].includes(input)){
                 filteredArr.push(arr[i])
             }
         }
